@@ -1,12 +1,12 @@
-##Source code ini akan menampilkan List Nilai Tugas, Nilai UTS, Nilai UAS, dan Nilai Akhir pada sebuah kolom penilaian yang akan memudahkan seorang dosen dalam merekap nilai-nilai para mahasiswanya.
+## Source code ini akan menampilkan List Nilai Tugas, Nilai UTS, Nilai UAS, dan Nilai Akhir pada sebuah kolom penilaian yang akan memudahkan seorang dosen dalam merekap nilai-nilai para mahasiswanya.
 
-##Saya menggunakan Python 3.4.2
+## Saya menggunakan Python 3.4.2
 
-##hasil outputnya berupa tabel menggunakan module Texttable yang sudah ada di library
+## hasil outputnya berupa tabel menggunakan module Texttable yang sudah ada di library
 ```javascript
 import texttable as tt
 ```
-##menggunakan while untuk perulangan
+## menggunakan while untuk perulangan
 ```javascript
 x = [[]]
 
@@ -16,7 +16,7 @@ tab = tt.Texttable()
 
 while (jawab == 'y'):
 ```
-##menu yang akan dieksekusi
+## menu yang akan dieksekusi
 ```javascript
 nama = []
 nim = []
@@ -26,7 +26,7 @@ nilai_uas = []
 nilai_akhir = []
 jawab = input("Tambah data [y/n]?  ")
 ```
-##inputan untuk mengeksekusi program
+## inputan untuk mengeksekusi program
 ```javascript
     nama.append(input("Masukkan Nama: "))
     nim.append(input("Masukkan Nim: "))
@@ -43,7 +43,7 @@ jawab = input("Tambah data [y/n]?  ")
     nilai_akhir.append(hasil)
     jawab = input("Tambah data [y/n]?  ")
 ```
-##perintah yang akan ditampilkan pada tabel
+## perintah yang akan ditampilkan pada tabel
 ```javascript
 idx = nama.index(i)
     x.append([idx+1,nama[idx],nim[idx],nilai_tugas[idx],nilai_uts[idx],nilai_uas[idx],nilai_akhir[idx]])
@@ -52,4 +52,4 @@ tab.set_cols_align(['l','l','l','r','r','r','r'])
 tab.header(['No','Nama','Nim','Nilai Tugas', 'Nilai UTS', 'Nilai UAS','Nilai Akhir'])
 print (tab.draw())
 ```
-##demikian sedikit penjelasan dari saya, semoga bermanfaat. Selamat mencoba...
+## demikian sedikit penjelasan dari saya, semoga bermanfaat. Selamat mencoba...
